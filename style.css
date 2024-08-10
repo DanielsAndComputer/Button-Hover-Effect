@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+html {
+    --clr-bk: #112f19;
+    --box-shadow: 0px 0px 10px  whitesmoke;
+}
+
+
+
+@keyframes animate {
+    0%,10% {
+        visibility: hidden;
+        opacity: 0;
+        bottom: 50%;
+        
+    }
+    
+    30% {
+        visibility: hidden;
+        opacity: 0;
+        bottom: 80%;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        bottom: 140%;
+        box-shadow: 0px 0px 10px  var(--clr);
+    }
+}
